@@ -1,3 +1,16 @@
+# traffic-plan
+
+## Overview
+
+The Traffic Project is a web application developed using React that integrates various APIs to provide dynamic route planning, address autocompletion, and event scheduling. It uses the Google Maps API for route visualization and Google Places API for address lookup. The project also integrates with Google Calendar API for event management.
+
+## Features
+
+- **Dynamic Route Planning:** Generates and displays driving routes between locations using the Google Maps API.
+- **Address Autocompletion:** Utilizes the Google Places API to provide address suggestions and autocomplete functionality.
+- **Event Scheduling:** Integrates with the Google Calendar API to allow users to schedule and manage events.
+- **Responsive UI:** Designed with custom styles for an interactive and user-friendly experience.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,15 +81,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# traffic-plan
 
-## Overview
-
-The Traffic Project is a web application developed using React that integrates various APIs to provide dynamic route planning, address autocompletion, and event scheduling. It uses the Google Maps API for route visualization and Google Places API for address lookup. The project also integrates with Google Calendar API for event management.
-
-## Features
-
-- **Dynamic Route Planning:** Generates and displays driving routes between locations using the Google Maps API.
-- **Address Autocompletion:** Utilizes the Google Places API to provide address suggestions and autocomplete functionality.
-- **Event Scheduling:** Integrates with the Google Calendar API to allow users to schedule and manage events.
-- **Responsive UI:** Designed with custom styles for an interactive and user-friendly experience.
