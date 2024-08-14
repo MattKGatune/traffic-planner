@@ -5,8 +5,8 @@ import Select from 'react-select';
 import './Styles.css';
 import { gapi } from 'gapi-script';
 
-const CLIENT_ID = '619292726484-ec6ohpmru3emv17c1odurfn8gh0vbq66.apps.googleusercontent.com';
-//const API_KEY = 'AIzaSyClskYKTVJzqK6962_ruGl-7FaQHX69wVk';
+const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
+const API_KEY = process.env.REACT_APP_API_KEY;
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 const SCOPES = "https://www.googleapis.com/auth/calendar.events";
 const libraries = ['places', 'geometry'];
@@ -39,8 +39,9 @@ const customStyles = {
 };
 
 const MyComponent = () => {
+
     const { isLoaded, loadError } = useLoadScript({
-        googleMapsApiKey: 'AIzaSyClskYKTVJzqK6962_ruGl-7FaQHX69wVk',
+        googleMapsApiKey: API_KEY,
         libraries,
     });
 
@@ -60,7 +61,7 @@ const MyComponent = () => {
     const destinationInputRef = useRef(null);
     const mapRef = useRef(null);
 
-    const API_KEY = 'AIzaSyClskYKTVJzqK6962_ruGl-7FaQHX69wVk';
+
     const url = 'https://routes.googleapis.com/directions/v2:computeRoutes';
 
     const fetchCountries = async () => {
